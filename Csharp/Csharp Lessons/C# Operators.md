@@ -1,4 +1,4 @@
-# 
+
 
 In C#, **_operators_** are special symbols that are to perform operations on variables and values on operands. Operators are important concepts in any programming language. Operators may take one or multiple operands to perform operations and produce a result. There can be perform multiple operations, such as arithmetic, value [assignment](https://www.tpointtech.com/assignment-operator-in-c), bitwise, and [logical](https://www.tpointtech.com/logical-operator-in-c) computations.
 

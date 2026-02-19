@@ -1,4 +1,4 @@
-# 
+
 
 In C#, data types specify the types of data variables. These are mainly used to define the type of data that a variable can store, including integers, floating-point numbers, characters, or Boolean values. It also defines the memory size and range of a memory.
 
