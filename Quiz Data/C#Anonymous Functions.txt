@@ -1,0 +1,23 @@
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Anonymous Functions', 'Which of the following syntaxes correctly defines a lambda expression in C#?', '(input) -> { expression }', '(input) => expression', 'delegate(input) => expression', 'lambda(input) { expression }', 'B', 'In C#, lambda expressions use the => (lambda declaration) operator to separate the input parameters on the left from the lambda body on the right.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Anonymous Functions', 'Given the delegate Func<int, int, bool>, which anonymous function can be assigned to it?', '(x, y) => x + y', '(x, y) => { return x == y; }', 'delegate(int x, int y) { Console.WriteLine(x == y); }', '(int x) => x > 0', 'B', 'Func<int, int, bool> requires two integer input parameters and returns a boolean. Option B is a statement lambda that correctly takes two parameters and returns a boolean value.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Anonymous Functions', 'What is the output of the following code snippet? int multiplier = 2; Func<int, int> multiply = x => x * multiplier; multiplier = 3; Console.WriteLine(multiply(5));', '10', '15', 'Compile-time error', 'Runtime exception', 'B', 'Anonymous functions in C# capture outer variables by reference, forming a closure. The lambda uses the value of the multiplier variable at the time of execution, which was updated to 3 before the invocation.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Anonymous Functions', 'Which of the following delegates is best suited to hold a lambda expression that takes a string parameter and returns void?', 'Func<string>', 'Predicate<string>', 'Action<string>', 'EventHandler<string>', 'C', 'The Action<T> delegate encapsulates a method that takes a single parameter and does not return a value. Func always returns a value, and Predicate strictly returns a boolean.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Anonymous Functions', 'What is a primary difference between an anonymous method (using the delegate keyword) and a lambda expression?', 'Anonymous methods execute faster than lambda expressions.', 'Anonymous methods can omit the parameter list entirely if they do not use the parameters, whereas lambdas usually cannot.', 'Lambda expressions cannot capture outer variables, but anonymous methods can.', 'Anonymous methods can be converted to expression trees, whereas lambdas cannot.', 'B', 'A unique feature of anonymous methods is that you can completely omit the parameter list if the method body does not need it (e.g., button.Click += delegate { };).');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Anonymous Functions', 'Which of the following types can a lambda expression be directly converted to, allowing the code structure to be examined at runtime?', 'Action<T>', 'Expression<TDelegate>', 'MethodInfo', 'ILGenerator', 'B', 'Lambda expressions can be implicitly converted to Expression<TDelegate>, representing the logic as data (an expression tree) rather than executable Intermediate Language. This is heavily used in LINQ providers.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Anonymous Functions', 'In modern C# (9.0 and later), how can you ignore input parameters in a lambda expression if they are not used?', 'By using the ignore keyword.', 'By using underscores (_) as discards.', 'By using the void keyword in place of the parameter name.', 'Parameters cannot be ignored in a lambda expression.', 'B', 'C# 9.0 introduced the ability to use discards (underscores) in lambda expressions to explicitly ignore unused parameters, such as (_, _) => Console.WriteLine(true);.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Anonymous Functions', 'Which of the following is an example of a statement lambda?', 'x => x * x', 'x => { return x * x; }', 'delegate(int x) { return x * x; }', 'Func<int, int> sq = x => x * x;', 'B', 'A statement lambda consists of a lambda operator followed by a statement block enclosed in braces. Option A is an expression lambda, and Option C is an anonymous method.');
