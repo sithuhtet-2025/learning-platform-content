@@ -1,0 +1,23 @@
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Stack', 'Which primary data processing principle does the System.Collections.Generic.Stack<T> class enforce in C#?', 'First-In, First-Out (FIFO)', 'First-In, Last-Out (FILO)', 'Last-In, First-Out (LIFO)', 'Random Access', 'C', 'A Stack operates on a Last-In, First-Out (LIFO) basis, meaning the most recently added element is the first one to be removed and processed.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Stack', 'Which method is used to add an object to the top of a Stack<T>?', 'Add()', 'Enqueue()', 'Insert()', 'Push()', 'D', 'The Push() method inserts an object at the top of the Stack. Add() is typically used for lists or standard collections, while Enqueue() is specifically used for queues.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Stack', 'What is the precise behavior of the Pop() method when called on a Stack<T>?', 'It returns the object at the top of the stack without removing it.', 'It removes and returns the object at the top of the stack.', 'It removes and returns the object at the bottom of the stack.', 'It clears the entire stack and returns the number of elements removed.', 'B', 'The Pop() method removes the most recently added element (the top) from the stack and returns it to the caller. To read the value without removing it, the Peek() method should be used.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Stack', 'What exception is thrown if you invoke the Pop() or Peek() methods on an empty Stack<T>?', 'NullReferenceException', 'IndexOutOfRangeException', 'InvalidOperationException', 'ArgumentNullException', 'C', 'Calling Pop() or Peek() on an empty stack immediately throws an InvalidOperationException. To avoid this safely, you should check the Count property or use the TryPop()/TryPeek() methods.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Stack', 'Which modern C# method safely attempts to remove and return the object at the top of the stack, avoiding runtime exceptions if the stack happens to be empty?', 'TryPop(out T result)', 'SafePop(out T result)', 'PopOrDefault()', 'Dequeue(out T result)', 'A', 'The TryPop(out T result) method returns true if an element was successfully removed and assigned to the out parameter, and false if the stack was empty, entirely avoiding the overhead of catching exceptions.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Stack', 'How is the generic Stack<T> class internally implemented in the .NET framework to ensure optimal performance?', 'As a singly linked list.', 'As a doubly linked list.', 'As a dynamically resizing array.', 'As a binary search tree.', 'C', 'Stack<T> is internally implemented using a dynamically resizing array. It maintains an internal index pointing to the top element, allowing both Push and Pop operations to run in highly efficient, amortized O(1) time.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Stack', 'When iterating over a Stack<T> using a standard foreach loop, in what order are the elements strictly returned?', 'From the oldest element (bottom) to the newest element (top).', 'From the newest element (top) to the oldest element (bottom).', 'In random memory-allocated order.', 'Iterating over a Stack<T> permanently removes the elements as they are read.', 'B', 'A foreach loop enumerates a Stack<T> in strict LIFO order—starting from the most recently pushed item at the top, down to the oldest item at the bottom—without modifying or removing any elements from the collection.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Stack', 'If you need to completely empty a Stack<T> and also release the large block of memory held by its internal array back to the system, which sequence of method calls is most appropriate?', 'stack.Clear(); stack.TrimExcess();', 'stack.PopAll();', 'stack.Dispose();', 'stack.Clear(true);', 'A', 'The Clear() method removes all elements by logically resetting the Count to 0 (and clearing object references), but it leaves the internal array capacity intact. Calling TrimExcess() afterward resizes the internal array down to the new Count, freeing the memory.');
