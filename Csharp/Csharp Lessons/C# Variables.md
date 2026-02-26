@@ -1,5 +1,4 @@
 
-
 C# variables are the containers that are used to store data during the program execution. It represents memory location and is used to reserve the memory space so that we can store data during the run-time of the program on that reserved space. We can also change the values of a variable during the run-time of the program.
 
 **Syntax:**

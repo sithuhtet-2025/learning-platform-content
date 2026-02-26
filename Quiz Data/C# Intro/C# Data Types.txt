@@ -1,0 +1,23 @@
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Data Types', 'What is the fundamental difference between Value Types and Reference Types in C#?', 'Value types are stored on the heap, while reference types are stored on the stack.', 'Value types directly contain their data (typically on the stack), while reference types store a pointer to their data allocated on the managed heap.', 'Value types can be null by default, while reference types cannot.', 'Value types are only used for numbers, while reference types are used for text.', 'B', 'In C#, value types (like int, bool, struct) hold their actual data directly in memory where they are declared. Reference types (like class, string, array) hold a memory address (reference) pointing to the actual data stored on the heap.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Data Types', 'Which of the following is NOT a built-in value type in C#?', 'int', 'bool', 'char', 'string', 'D', 'While ''string'' is a highly optimized built-in type in C#, it is technically an immutable reference type (System.String) allocated on the heap, unlike int, bool, and char which are value types (structs).');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Data Types', 'What is the memory size and nature of the standard ''int'' data type in C#?', '16-bit signed integer', '32-bit signed integer', '64-bit signed integer', '32-bit unsigned integer', 'B', 'The ''int'' keyword is an alias for the System.Int32 struct, representing a 32-bit signed integer that can hold values from approximately -2.14 billion to 2.14 billion.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Data Types', 'Which floating-point data type is specifically designed for high-precision financial and monetary calculations in C# to avoid rounding errors?', 'float', 'double', 'decimal', 'currency', 'C', 'The ''decimal'' type (System.Decimal) is a 128-bit data type with significantly higher precision and a smaller range than ''double''. It is specifically engineered to minimize rounding errors in financial and monetary calculations.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Data Types', 'How do you correctly declare a value type variable that is capable of storing its normal range of values as well as a ''null'' value?', 'int obj = null;', 'Nullable int count;', 'int? count = null;', 'var count = null;', 'C', 'Value types cannot natively hold a null value. However, appending a question mark (e.g., ''int?'') utilizes the Nullable<T> struct, allowing the variable to hold its standard values or explicitly be set to null.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Data Types', 'What is the default value of an uninitialized ''bool'' field defined at the class level?', 'true', 'false', 'null', '0', 'B', 'In C#, uninitialized fields of a class are automatically assigned their default values by the compiler. For the boolean (bool) value type, the default value is always ''false''.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Data Types', 'What does the ''var'' keyword do when declaring a local variable in C#?', 'It creates a dynamic variable whose type can change at runtime.', 'It creates a variable of type System.Variant.', 'It instructs the compiler to implicitly infer and lock in the exact data type at compile-time based on the assigned value.', 'It bypasses type safety checks for that specific variable.', 'C', 'The ''var'' keyword does not make a variable dynamically typed. It is simply syntactic sugar that tells the C# compiler to deduce the strict, static type of the variable based on the right-hand side of the initialization statement.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('C# Data Types', 'Which of the following data types is used to store a single, 16-bit Unicode character?', 'string', 'char', 'byte', 'short', 'B', 'The ''char'' data type (System.Char) represents a single 16-bit Unicode character. It is a value type and is always declared using single quotes (e.g., ''A''), unlike strings which use double quotes.');

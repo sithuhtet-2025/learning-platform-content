@@ -1,7 +1,4 @@
- 
-Last Updated : 21 Jan 2026
-
-In C# programming language, the out keyword is mainly used to pass arguments by reference. It is like a reference-type, except it does not require a variable to initialize before passing. We must use the out keyword to pass arguments as an out type. It is useful when we want a function to return multiple values.
+ In C# programming language, the out keyword is mainly used to pass arguments by reference. It is like a reference-type, except it does not require a variable to initialize before passing. We must use the out keyword to pass arguments as an out type. It is useful when we want a function to return multiple values.
 
 **Syntax**
 
