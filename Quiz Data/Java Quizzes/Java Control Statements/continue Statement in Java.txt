@@ -1,0 +1,16 @@
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('continue Statement in Java', 'What happens when a ''continue'' statement is executed in a traditional ''for'' loop?', 'It jumps immediately to the update/increment expression of the loop.', 'It skips the current iteration and jumps to the condition evaluation.', 'It exits the loop entirely.', 'It causes a compilation error if not labeled.', 'A', 'In a ''for'' loop, the ''continue'' statement transfers control directly to the update expression, followed by the condition evaluation.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('continue Statement in Java', 'Consider a nested loop. What is the effect of an unlabeled ''continue'' statement inside the inner loop?', 'It skips the current iteration of both the inner and outer loops.', 'It skips the current iteration of the inner loop only.', 'It exits the inner loop and moves to the next iteration of the outer loop.', 'It causes a compilation error.', 'B', 'An unlabeled ''continue'' statement always applies to the innermost enclosing loop, skipping the rest of its body and proceeding to its next iteration.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('continue Statement in Java', 'Which of the following describes the difference between ''continue'' in a ''while'' loop versus a ''for'' loop?', 'In a ''while'' loop, ''continue'' jumps to the update statement, but in a ''for'' loop it jumps to the condition.', 'In a ''while'' loop, ''continue'' jumps directly to the condition evaluation, potentially causing an infinite loop if the update statement is bypassed.', 'There is no difference; ''continue'' behaves exactly the same in both loops.', '''continue'' cannot be used in a ''while'' loop.', 'B', 'Unlike a ''for'' loop where the update expression is executed automatically, a ''while'' loop''s update statement inside the body will be bypassed if a ''continue'' is executed before it.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('continue Statement in Java', 'Where is it syntactically legal to use a ''continue'' statement in Java?', 'Inside any block of code.', 'Only inside loops (''for'', ''while'', ''do-while'').', 'Inside loops and ''switch'' statements.', 'Only inside ''if-else'' statements.', 'B', 'The ''continue'' statement can only be used inside the body of a loop. Using it outside a loop causes a compile-time error.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('continue Statement in Java', 'What is the purpose of a labeled ''continue'' statement?', 'To skip the current iteration of an outer loop from within an inner loop.', 'To exit an outer loop completely from within an inner loop.', 'To jump to a specific line of code indicated by a label.', 'To throw a labeled exception.', 'A', 'A labeled ''continue'' skips the current iteration of the specific loop identified by the label, rather than just the innermost loop.');
+
+

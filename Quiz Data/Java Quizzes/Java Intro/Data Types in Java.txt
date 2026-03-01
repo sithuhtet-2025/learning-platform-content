@@ -1,0 +1,17 @@
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('Data Types in Java', 'What is the memory size of a ''char'' primitive data type in Java?', '8-bit signed integer', '16-bit unsigned Unicode character', '32-bit single-precision floating point', 'It depends on the underlying operating system.', 'B', 'Unlike C/C++ where a char is typically 8 bits, Java uses the 16-bit Unicode character set (UTF-16) for its ''char'' primitive type to support internationalization.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('Data Types in Java', 'Which of the following variable initializations will cause a compilation error?', 'int a = 0b1010;', 'double b = 3.14;', 'float c = 3.14;', 'long d = 100_000L;', 'C', 'In Java, floating-point literals are treated as ''double'' (64-bit) by default. Assigning a double literal to a ''float'' (32-bit) variable requires an explicit cast or appending an ''f'' or ''F'' (e.g., float c = 3.14f;).');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('Data Types in Java', 'What is the default value of a local primitive integer variable declared inside a method block if it is not explicitly initialized?', '0', 'null', 'Garbage value', 'It causes a compilation error.', 'D', 'While instance variables (class fields) receive default values (e.g., 0 for int), local variables declared within methods do not. Attempting to use an uninitialized local variable results in a compile-time error.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('Data Types in Java', 'Which of the following represents a valid implicit type conversion (widening conversion) in Java without requiring a cast?', 'int to short', 'double to float', 'char to int', 'long to int', 'C', 'A ''char'' is an unsigned 16-bit value. It can be safely and implicitly widened to a 32-bit signed ''int'' without data loss. The other options are narrowing conversions that require explicit casting.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('Data Types in Java', 'Since Java 7, what is the valid placement of an underscore (_) in a numeric literal?', 'At the very beginning of the literal.', 'At the very end of the literal.', 'Adjacent to a decimal point.', 'Strictly between digits to improve readability.', 'D', 'Underscores can be placed between digits in numeric literals to improve readability (e.g., 1_000_000). They cannot be placed at the beginning, end, adjacent to a decimal point, or before/after an ''L'' or ''F'' suffix.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('Data Types in Java', 'According to the Java Virtual Machine Specification, what is the precise memory size of a ''boolean'' primitive?', '1 bit', '8 bits (1 byte)', '32 bits', 'It is not precisely defined.', 'D', 'The JVM spec dictates that a ''boolean'' represents one bit of information (true/false), but its exact size in memory is not explicitly defined and depends entirely on the JVM implementation (though arrays of booleans are typically stored as arrays of bytes).');

@@ -1,0 +1,14 @@
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('Java Comments', 'Which of the following is the correct syntax for a single-line comment in Java?', '', '# comment', '// comment', '/* comment', 'C', 'In Java, two forward slashes (//) are used to denote a single-line comment. Everything from the slashes to the end of the line is ignored by the compiler.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('Java Comments', 'What happens when the Java compiler encounters comments during the compilation process?', 'It translates them into bytecode instructions for the JVM.', 'It completely ignores them; they are not included in the compiled .class file.', 'It stores them in a separate metadata file alongside the .class file.', 'It throws a warning if there are too many comments.', 'B', 'Comments are purely for human readability. The Java compiler completely ignores them, and they have no impact on the resulting bytecode or program execution.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('Java Comments', 'Which comment syntax is specifically designed to be extracted by the JDK to generate API documentation?', '// ...', '/* ... */', '/** ... */', '/// ...', 'C', 'The /** ... */ syntax is used for Javadoc comments. The javadoc tool parses these comments to automatically generate HTML-based API documentation for classes, methods, and fields.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('Java Comments', 'Is it possible to nest multi-line comments (/* ... */) in Java?', 'Yes, nesting multi-line comments is fully supported.', 'No, the compiler will treat the first ''*/'' it encounters as the end of the comment, causing a syntax error for the remaining text.', 'Yes, but only if they are enclosed within Javadoc comments.', 'No, the compiler ignores nested comments silently.', 'B', 'Java does not support nested multi-line comments. When the compiler sees ''/*'', it looks for the very next ''*/'' to close it. Any subsequent ''*/'' will be treated as invalid syntax.');
+
+INSERT INTO Quizzes (LessonTitle, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectAnswer, Explanation) VALUES 
+('Java Comments', 'Which Javadoc tag is used to describe the return value of a method?', '@returns', '@return', '@retval', '@out', 'B', 'The ''@return'' tag is the standard Javadoc tag used to document the value returned by a method.');
