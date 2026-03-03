@@ -1,6 +1,5 @@
 # Java CharArrayReader Class
 
-Last Updated : 12 Feb 2026
 
 The CharArrayReader class in Java is used to read a character array as a character input stream.
 

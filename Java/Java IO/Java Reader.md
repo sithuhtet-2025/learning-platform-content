@@ -1,6 +1,3 @@
-# Java Reader
-
-
 
 The Reader class in Java is an abstract class used for reading character streams.
 

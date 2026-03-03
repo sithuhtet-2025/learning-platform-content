@@ -1,7 +1,5 @@
 # Java FileWriter Class
 
-Last Updated : 12 Feb 2026
-
 The FileWriter class in Java is used to write character-oriented data directly into a file.
 
 In this chapter, we will learn what the FileWriter class is, why it is used, its declaration, constructors, important methods, and how to write character data to files using examples.

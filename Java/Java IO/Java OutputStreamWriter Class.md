@@ -1,5 +1,3 @@
-# Java OutputStreamWriter Class
-
 The OutputStreamWriter class in Java is used to convert a character stream into a byte stream using a specified character encoding.
 
 In this chapter, we will learn what the OutputStreamWriter class is, why it is used, its declaration, constructors, important methods, and how to write character data to byte streams using examples.

@@ -1,6 +1,6 @@
 # Java FileReader Class
 
-Last Updated : 12 Feb 2026
+
 
 The FileReader class in Java is used to read character-oriented data from a file.
 

@@ -1,6 +1,5 @@
 # Java CharArrayWriter Class
 
-Last Updated : 12 Feb 2026
 
 The CharArrayWriter class in Java is used to write character data into an in-memory buffer that can be reused to write data to multiple output streams.
 

@@ -1,7 +1,3 @@
-# 
-
-Last Updated : 12 Feb 2026
-
 **Java**, a versatile and widely-used programming language, offers a robust set of data structures to handle **collections** of objects efficiently. One of the fundamental data structures in Java is the List interface that provides an ordered collection of elements with dynamic sizing. It is a part of **Java Collections Framework,** provides a versatile and ordered way to handle collections of elements. In this section, we will explore the **features, implementations**, and best practices associated with **Java Lists**.
 
 **List** in Java provides the facility to maintain the _ordered collection_. It contains the index-based methods to insert, update, delete and search the elements. It can have the duplicate elements also. We can also store the null elements in the list.

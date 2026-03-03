@@ -1,7 +1,3 @@
-# Java PrintWriter Class
-
-Last Updated : 12 Feb 2026
-
 The PrintWriter class in Java is used to write formatted text representations of objects to a character output stream.
 
 In this chapter, we will learn what the PrintWriter class is, why it is used, its declaration, constructors, important methods, and how to write formatted data to the console and files using examples.

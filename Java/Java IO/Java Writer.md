@@ -1,5 +1,3 @@
-# Java Writer
-
 The Writer class in Java is an abstract class used for writing character streams.
 
 In this chapter, we will learn what the Writer class is, why it is used, its declaration, constructors, important methods, and how it works using examples.

@@ -1,6 +1,5 @@
 # Java BufferedReader Class
 
-Last Updated : 12 Feb 2026
 
 The BufferedReader class in Java is used to read text efficiently from a character-based input stream.
 
